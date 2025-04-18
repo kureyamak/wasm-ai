@@ -42,7 +42,7 @@
           if (netParam.mode == 'delegate') {
               nwStack = delegate(worker, workerImage, netParam.param);
           } else if (netParam.mode == 'browser') {
-              nwStack = newStack(worker, workerImage, new Worker("./wasm-ai/stack-worker.js"+location.search), location.origin + "/wasm-ai/c2w-net-proxy.wasm");
+              nwStack = newStack(worker, workerImage, new Worker("/wasm-ai/stack-worker.js"+location.search), location.origin + "/wasm-ai/c2w-net-proxy.wasm");
           }
       }
       if (!nwStack) {

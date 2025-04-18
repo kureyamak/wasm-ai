@@ -17,7 +17,7 @@
       const params = new URLSearchParams(window.location.search);
     const model = params.has('model') 
     ? params.get('model') 
-    : 'out';
+    : location.origin + "/wasm-ai/bitnet.wasm";
 
 
       const xterm = new Terminal();
@@ -37,7 +37,7 @@
 
       var nwStack;
       var netParam = getNetParam();
-      var workerImage = location.origin + "/wasm-ai/"+model+".wasm";
+      var workerImage =  model;
       if (netParam) {
           if (netParam.mode == 'delegate') {
               nwStack = delegate(worker, workerImage, netParam.param);

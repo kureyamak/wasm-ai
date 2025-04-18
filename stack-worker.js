@@ -1,5 +1,5 @@
-importScripts(location.origin + "/wasm-ai/browser_wasi_shim/index.js");
-importScripts(location.origin + "/wasm-ai/browser_wasi_shim/wasi_defs.js");
+importScripts(location.origin + "/wasm-ai/browser_wasi_shim/out/index.js");
+importScripts(location.origin + "/wasm-ai/browser_wasi_shim/out/wasi_defs.js");
 importScripts(location.origin + "/wasm-ai/worker-util.js");
 importScripts(location.origin + "/wasm-ai/wasi-util.js");
 

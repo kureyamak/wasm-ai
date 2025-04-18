@@ -32,7 +32,7 @@ https://cdn.jsdelivr.net/npm/coi-serviceworker@0.1.7/coi-serviceworker.min.js
 
       var nwStack;
       var netParam = getNetParam();
-      var workerImage = location.origin + "/out.wasm";
+      var workerImage = location.origin + "/wasm-ai/out.wasm";
       if (netParam) {
           if (netParam.mode == 'delegate') {
               nwStack = delegate(worker, workerImage, netParam.param);

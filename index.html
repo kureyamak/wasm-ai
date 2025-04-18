@@ -2,11 +2,16 @@
   <head>
     <title>container + WASI on browser</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xterm@4.17.0/css/xterm.css">
+    <link rel="stylesheet" href="./xterm/xterm.css">
+    <script src="
+https://cdn.jsdelivr.net/npm/coi-serviceworker@0.1.7/coi-serviceworker.min.js
+"></script>
   </head>
   <body>
     <div id="terminal"></div>
-    <script src="https://cdn.jsdelivr.net/npm/xterm@4.17.0/lib/xterm.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/xterm-pty@0.9.4/index.js"></script>
+     <script src="./xterm/xterm.min.js"></script>
+     <script src="./xterm/xterm/index.js"></script>
+  
     <script src="./stack.js"></script>
     <script src="./ws-delegate.js"></script>
     <script>
